@@ -1,0 +1,275 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0;}
+body{
+	height: 100%;
+	width: 100%;
+	background-color:rgba(243,243,243,1.00);
+	margin: 0px;
+}
+#main-index{
+	width: 100%;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.container{
+	width: 1170px;
+	height: 980px;
+    margin-left: auto;
+	margin-right: auto;
+}
+#main{
+	width: 750px;
+	height: 970px; 
+	float:left;
+	margin: 10px 0px 10px 23px;
+}
+#main a{
+	color: rgba(107,107,107,1.00);
+}
+#main a:hover{
+	color: rgba(96,178,236,1.00);
+}
+.main-num{
+	width: 720px;
+	height: 219px;
+	margin: 0px 15px 15px 15px;
+	background-color: rgba(243,243,243,1.00);
+}
+.main-num1a{
+	width: 705px;
+	height: 167px;
+	margin: 0px 0px 2px 0px;
+	background-color: rgba(252,252,252,1.00);
+	padding-top: 15px;
+	padding-left: 15px;
+	
+}
+.main-aside{
+	width: 360px;
+	height: 187px;
+	margin-bottom: 15px;
+	position: relative;
+	z-index: 1;
+	background-color: #fcfcfc;
+	padding-top: 3px;
+}
+.ul-text-center{
+	width: 300px;
+	height: 299px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.tabul{
+	width: 300px;
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.tabul li{
+	width: 99px;
+	height: 40px;
+	float: left;
+	list-style: none;
+	text-align: center;
+	padding-top: 10px;
+}
+.tabul li>a{
+	width: 99px;
+	height: 43px;
+}
+.tab-content{
+	width: 284px;
+	height: 224px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+.tab-pane{
+	width: 284px;
+	height: 224px;
+}
+.list-group a{
+	border-bottom: 1.5px dashed;
+}
+.main-image{
+	width: 240px;
+	height: 145px;
+	margin: 1px 15px 1px 1px;
+	border-style: solid;
+	border-color: rgba(235,235,235,1.00);
+	border-width: 3px;
+	float:left;
+}
+.main-main{
+	width: 420px;
+	height: 145px; 
+	float: left;
+	margin: 1px 5px 0px 5px;
+}
+.label{
+	width: 58px;
+	height: 26px;
+	background-color:rgba(96,178,236,1.00);
+	float: left;
+	line-height: 1.8;
+	margin-right: 4px;
+	font-size: 14px;
+	text-align: center;
+	padding-top: 1px;
+}
+.title-new{
+	width: 350px;
+	height: 23px;
+	line-height: 1;
+	margin: 0px;
+	font-size: 20px;
+	padding-top: 4px;
+}
+.entry-content-new{
+	width: 420px;
+	height: 100px;
+	float: left;
+}
+.entry-content-new p{
+	margin: 4px;
+}
+.main-foot{
+	width: 720px;
+	height: 35px;
+	margin: 0px;
+	background-color: rgba(251,251,251,1.00);
+	font-size: 12px;
+}
+.main-hader-new{
+	width: 420px;
+	height: 30px;
+	padding: 0px;
+}
+.pull-left{
+	width: 176px;
+	height: 28px;
+	margin: 0px;
+	padding-left: 8px;
+	padding-top: 6px;
+	float: left;
+}
+.pull-left>a{
+	margin-right: 5px;
+}
+.pull-left-zhong>a{
+	margin-right: 5px;
+}
+.pull-left-zhong{
+	width: 300px;
+	height: 28px;
+	margin: 0px;
+	padding-top: 6px;
+	float: left;
+}
+.pull-right{
+	float: left;
+	padding-top: 6px;
+	padding-right: 15px;
+	margin: 0px;
+}
+.photo-background{
+	width: 100%;
+	height: 120px;
+	background: url("../images/about.jpg")no-repeat center center;
+	background-size: cover;
+	position: absolute;
+	top: 0px;
+}
+.photo-wrapper-clearfix{
+	width: 100%;
+	height: 40px;
+	background-color: #fcfcfc;
+	position: absolute;
+	top: 121px;
+}
+.photo-wrapper-text-center{
+	position: absolute;
+	top: 30%;
+	left: 135px;
+	bottom: 135px;
+	z-index: 3;
+	text-align: center;
+}
+.about-photo{
+	display: flex;
+	border-radius: 50%;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+#sidebar{
+	width: 360px;;
+	height: 900px;
+	float: right;
+	margin: 10px 23px 10px 0px;
+	right: 10px;
+}
+#sidebar a{
+	color: rgba(115,115,115,1.00);
+}
+#sidebar a:hover{
+	color: rgba(0,0,0,1.00);
+}
+.widget-title{
+	width: 310px;
+	height: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+#archives-5 li{
+	list-style: none;
+	margin-left: 25px;
+}
+.main-text{
+	height: 218px;
+	width: 49%;
+	background-color: rgba(255,255,255,1.00)
+}
+.page-foot{
+	width: 100%;
+	float: left;
+	margin: 0px;
+}
+.page-ul li{
+	list-style: none;
+}
+.page-ul a{
+	width: 35px;
+	height: 20px;
+	background: rgba(252,252,252,1.00); 
+	padding: 10px 5px 5px 5px;
+	line-height: 15px;
+	float: left;
+	margin-right: 20px;
+	text-align: center;
+	vertical-align: middle;
+}
+#page-foot{
+	width: 270px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#page-foot-center{
+	width: 330px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#page-foot a{
+	color: rgba(66,66,69,1.00);
+}
+#guidang li::before{
+	content: '\f133';
+    margin-right: 8px;
+}
+#page-foot a:hover{
+	background: rgba(96,178,236,1.00);
+	color: rgba(252,252,252,1.00);
+}

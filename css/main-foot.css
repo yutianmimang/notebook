@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+#main{
+	position: relative;
+}
+#bottom{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+#page-foot-center a:hover{
+	background: rgba(96,178,236,1.00);
+	color: rgba(252,252,252,1.00);
+}

@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+#mysql-wrapper{
+	height: 935px;
+}
+#mysql-container{
+	height: 925px;
+}
+#post-mysql{
+	height: 600px;
+}
+.video{
+	line-height: 1.6;
+	font-size: 16px;
+}
+.kratos-post-content pre{
+	background-color: #66ccff
+}

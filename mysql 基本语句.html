@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>mysql 基本语句</title>
+<link rel="stylesheet" type="text/css" href="css/header.css">
+<link rel="stylesheet" type="text/css" href="css/2kvideo.css">
+<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/foot.css">
+<link rel="stylesheet" type="text/css" href="css/mysql.css">
+</head>
+<body>
+	<head>
+		<div>
+          <nav id="headers">
+			  <div id="header-size">
+			  <div id="logo-header"><span><a href="index.html">雨天迷茫的阳光</a></span></div>
+			  <div class="header-fenlei"><a href="index.html">首页</a></div>
+			  <div class="header-fenlei"><a href="Windows.html">Windows</a></div>
+			  <div class="header-fenlei"><a href="Mac OS.html">Mac OS</a></div>
+			  <div class="header-fenlei-wei"><a href="linux.html">linux</a></div>
+			  </div>
+		</nav>
+		</div> 
+		
+	</head>
+	<div class="wrapper" id="mysql-wrapper">
+				 <div class="container" id="mysql-container">
+							 <article>
+								 <div class="main-post" id="post-mysql">
+									 <header class="entry-header">
+										 <h1 class="kratos-entry-title text-center">mysql 基本语句</h1>
+									 </header>
+									 <div class="post-meta">
+										 <span>
+                                               <i class="fa fa-calendar"></i> 2018年12月6日                                
+											   <i class="fa fa-commenting-o"></i> 0条评论
+                                               <i class="fa fa-eye"></i> 2次阅读  
+                                               <span class="hd">
+                                               <i class="fa fa-thumbs-o-up"></i> 0人点赞
+                                               <i class="fa fa-user"></i> PENG YIFAN                                
+											   </span>
+                                         </span>
+									 </div>
+									 <div class="post-content">
+										 <div class="video">
+											 <div class="kratos-post-content">
+                                                <p>增insert删delete改update查select</p>
+                                                <p>update 更新&nbsp; &nbsp;alter&nbsp; 改变</p>
+                                                <p>创建数据库</p>
+                                                <p><mark>create database&nbsp;数据库;</mark></p>
+                                                <p>查看指定数据库</p>
+                                                <p><mark>show create database&nbsp;数据库;</mark></p>
+                                                <p>查看数据库(所有的)</p>
+                                                <p><mark>show databases;</mark></p>
+                                                <p>修改数据库编码</p>
+                                                <p>
+                                                  <mark> alter database&nbsp;数据库 default character set&nbsp; 新编码方式 collate&nbsp;新编码方式_bin;</mark></p>
+                                                <p>使用数据库</p>
+                                                <p><mark>use db</mark></p>
+                                                <p>删除数据库</p>
+                                                <p><mark>drop database&nbsp;数据库；（不能一次删除多个！）</mark></p>
+                                                <p>创建表</p>
+                                                <p>
+                                                  <mark>create table 表名(列名 数据类型 [not null] [primary key],列名 数据类型 [not null],..)</mark></p>
+                                                <p>查看所有表</p>
+                                                <p>
+                                                  <mark>show tables</mark></p>
+                                                <p>查看一个表数据</p>
+                                                <p>
+                                                  <mark>select * from 表名&nbsp; &nbsp; &nbsp; &nbsp; *代表所有列&nbsp; 也可以select&nbsp; 列名 from 表名</mark></p>
+                                                <p>删除表</p>
+                                                <p><mark>drop table 表名</mark></p>
+                                                <p>更改表名</p>
+                                                <p>
+                                                  <mark> rename&nbsp;table 旧表名 to&nbsp;新表名</mark></p>
+                                                <p>增加表内容 插入数据</p>
+                                                <p><mark>insert&nbsp; into&nbsp; 表名（列名，列名…）values（值，值…）</mark></p>
+                                                <p>修改列中的一条记录</p>
+                                                <p><mark>update&nbsp; 表名&nbsp; set&nbsp; &nbsp;列=值&nbsp; &nbsp;where&nbsp; &nbsp;列=值</mark></p>
+                                                <p>删除列中的一条记录</p>
+                                                <p><mark>delete&nbsp; from&nbsp; 表名&nbsp; &nbsp;where&nbsp; &nbsp;列=值</mark></p>
+                                                <p>增加一个列</p>
+                                                <p><mark>Alter table 表名 add 列名 数据类型</mark></p>
+                                                <p>删除一个列</p>
+                                                <p><mark>Alter table 表名&nbsp;drop column 列名</mark></p>
+                                                <p>修改一个列名</p>
+                                                <p><mark>Alter table&nbsp; 表名 change 列名<span class="Apple-converted-space">&nbsp; 新列名 数据类型;</span></mark></p>
+                                                <p>desc 降序排列</p>
+                                                <p>asc&nbsp; &nbsp;升序排列</p>
+                                                <p>delete 删除记录&nbsp; 结构依然存在&nbsp; &nbsp;即还可以找到&nbsp; &nbsp;执行后有提交过程</p>
+                                                <p>drop&nbsp; &nbsp;结构和数据都删除&nbsp; &nbsp; &nbsp;一步操作完成</p>
+                                            </div>
+										 </div>
+									 </div>
+								 </div>
+								 <div class="footer-wai">
+								 <footer class="video-foot">
+									 <div class="video-donate">
+										 <a href="" data-ation="live" class="love">
+											 <i class="fa fa-thumbs-o-up"></i>
+											  点赞
+										 </a>
+										 <a href="" class="Share">
+											 <i class="fa fa-share-alt"></i>
+											  分享
+										 </a>
+									 </div>
+									 <div class="footer-tag">
+										 <div class="pull-left">
+											 <i class="fa fa-tags"></i>
+											 <a>No Tag</a>
+										 </div>
+										 <div class="pull-date">
+											 <span>最后编辑：2018年12月06日</span>
+										 </div>
+									 </div>
+								 </footer>
+								 </div>
+							 </article>
+							 <div class="comments-area">
+								 <div class="comment-respond">
+								   <h4 class="comment-reply-title">
+										 发表评论 
+								   </h4>
+								   <form class="comment-form" method="post">
+										 <div class="input-group">
+											 <textarea class="form-control" id="comment" placeholder="|´・ω・)ノ还不快点说点什么呀poi~" name="comment" rows="5" aria-required="true" required="" onkeydown="if(event.ctrlKey){if(event.keyCode==13){document.getElementById('submit').click();return false}};"></textarea>
+										 </div>
+								   </form>
+								   <p class="form-submit">
+									   <input name="submit" type="submit" id="submit" class="btn-primary" value="发表评论">
+								   </p>
+							   </div>
+							 </div>
+					 </div>
+	</div>
+	<foot>
+	 <div id="footer-center-index">
+		<div id="footer">
+			<div class="container-foot">
+				<div class="row-foot">
+					<div class="foot-text-conter">
+						<p class="social-icons">                             </p>
+						<p>
+							@2018
+							<a href="">雨天迷茫的阳光</a>
+							. All Rights Reserved. | 本站已运行
+							<span id="span_dt_dt">40天19小时26分60秒</span>
+							<br>Theme
+							<a href="https://github.com/xb2016/kratos" target="_blank" rel="nofollow">Kratos</a>
+							 made by 
+							<a href="https://www.vtrois.com" target="_blank" rel="nofollow">Vtrois</a>
+							<br>
+							<a href="http://www.miitbeian.gov.cn/" rel="external nofollow" target="_blank">湘ICP备18019743号</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</foot>
+</body>
+</html>

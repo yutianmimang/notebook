@@ -1,0 +1,368 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>centos-安装mysql</title>
+<link rel="stylesheet" type="text/css" href="css/header.css">
+<link rel="stylesheet" type="text/css" href="css/2kvideo.css">
+<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/foot.css">
+<link rel="stylesheet" type="text/css" href="css/centos-mysql.css">
+</head>
+<body>
+	<head>
+		<div>
+          <nav id="headers">
+			  <div id="header-size">
+			  <div id="logo-header"><span><a href="index.html">雨天迷茫的阳光</a></span></div>
+			  <div class="header-fenlei"><a href="index.html">首页</a></div>
+			  <div class="header-fenlei"><a href="Windows.html">Windows</a></div>
+			  <div class="header-fenlei"><a href="Mac OS.html">Mac OS</a></div>
+			  <div class="header-fenlei-wei"><a href="linux.html">linux</a></div>
+			  </div>
+		</nav>
+		</div> 
+		
+	</head>
+	<div class="wrapper" id="mysql-wrapper">
+				 <div class="container" id="mysql-container">
+							 <article>
+								 <div class="main-post" id="post-mysql">
+									 <header class="entry-header">
+										 <h1 class="kratos-entry-title text-center">Centos-安装mysql</h1>
+									 </header>
+									 <div class="post-meta">
+										 <span>
+                                               <i class="fa fa-calendar"></i> 2018年12月6日                                
+											   <i class="fa fa-commenting-o"></i> 0条评论
+                                               <i class="fa fa-eye"></i> 2次阅读  
+                                               <span class="hd">
+                                               <i class="fa fa-thumbs-o-up"></i> 0人点赞
+                                               <i class="fa fa-user"></i> PENG YIFAN                                
+											   </span>
+                                         </span>
+									 </div>
+									 <div class="post-content">
+										 <div class="video">
+											 <div class="kratos-post-content">
+												 <h2 class="title-h2"></h2>
+												 <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">添加REPO源</font></font></p>
+												 <h2 class="title-h2">
+													 <p>
+														 <font style="vertical-align: inherit;">
+															 <font style="vertical-align: inherit;">[root @ localhost~] #cd / usr / local / src / 
+															 </font>
+														 </font><br>
+														 <font style="vertical-align: inherit;">
+															 <font style="vertical-align: inherit;">[root @ localhost src] #wget http://repo.mysql.com/mysql57-community-release-el7-8.noarch.rpm
+															 </font>
+														 </font>
+													 </p>
+													 <p>
+														 <font style="vertical-align: inherit;">
+															 <font style="vertical-align: inherit;">[root @ localhost src] #rpm -ivh mysql57-community-release-el7-8.noarch.rpm
+															 </font>
+														 </font>
+													 </p>
+													 <p>
+														 <font style="vertical-align: inherit;">
+															 <font style="vertical-align: inherit;">[root @ localhost src] #yum -y install mysql-server
+															 </font>
+														 </font>
+													 </p>
+												 </h2>
+												 <p>
+													 <font style="vertical-align: inherit;">
+														 <font style="vertical-align: inherit;">根据步骤安装就可以了，
+														 </font>
+													 </font>
+												 </p>
+												 <h2 class="title-h2">
+													 <font style="vertical-align: inherit;">
+														 <font style="vertical-align: inherit;">默认配置文件路径：</font>
+													 </font><br>
+													 <font style="vertical-align: inherit;">
+														 <font style="vertical-align: inherit;">配置文件：/etc/my.cnf中
+														 </font>
+													 </font><br>
+													 <font style="vertical-align: inherit;">
+														 <font style="vertical-align: inherit;">日志文件：/var/log/var/log/mysqld.log 
+														 </font>
+													 </font><br>
+													 <font style="vertical-align: inherit;">
+														 <font style="vertical-align: inherit;">服务启动脚本：/usr/lib/systemd/system/mysqld.service 
+														 </font>
+													 </font><br>
+													 <font style="vertical-align: inherit;">
+														 <font style="vertical-align: inherit;">套接字文件：/ VAR /run/mysqld/mysqld.pid
+														 </font>
+													 </font><br>
+												 </h2>
+												 <p>
+													 <font style="vertical-align: inherit;">
+														 <font style="vertical-align: inherit;">配置my.cnf vim /etc/my.cnf
+														 </font>
+													 </font>
+												 </p>
+												 <h2 class="title-h2">
+													 <p>
+														 <font style="vertical-align: inherit;">
+															 <font style="vertical-align: inherit;">[mysqld] 
+															 </font>
+														 </font><br>
+														 <font style="vertical-align: inherit;">
+															 <font style="vertical-align: inherit;">## 
+															 </font>
+														 </font><br>
+														 <font style="vertical-align: inherit;">
+															 <font style="vertical-align: inherit;">删除前导＃并设置为
+															 </font>
+														 </font><br>
+														 <font style="vertical-align: inherit;">
+															 <font style="vertical-align: inherit;">MySQL中
+															 </font>
+															 <font style="vertical-align: inherit;">最重要的数据#cache的RAM量</font>
+															 <font style="vertical-align: inherit;">。
+															 </font>
+															 <font style="vertical-align: inherit;">从专用服务器的总RAM的70％开始，否则为10％。
+															 </font>
+														 </font><br>
+														 <font style="vertical-align: inherit;">
+															 <font style="vertical-align: inherit;">#innodb_buffer_pool_size = 128M 
+															 </font>
+														 </font><br>
+														 <font style="vertical-align: inherit;">
+															 <font style="vertical-align: inherit;">## 
+															 </font>
+														 </font><br>
+														 <font style="vertical-align: inherit;">
+															 <font style="vertical-align: inherit;">删除前导＃以打开一个非常重要的数据完整性选项：
+															 </font>
+														 </font><br>
+														 <font style="vertical-align: inherit;">
+															 <font style="vertical-align: inherit;">在备份之间
+															 </font>
+															 <font style="vertical-align: inherit;">将
+															 </font>
+															 <font style="vertical-align: inherit;">＃changes 
+															 </font>
+															 <font style="vertical-align: inherit;">更改为二进制日志。
+															 </font>
+														 </font><br>
+														 <font style="vertical-align: inherit;">
+															 <font style="vertical-align: inherit;">#log_bin 
+															 </font>
+														 </font><br>
+														 <font style="vertical-align: inherit;">
+															 <font style="vertical-align: inherit;">## 
+															 </font>
+														 </font><br>
+														 <font style="vertical-align: inherit;">
+															 <font style="vertical-align: inherit;">删除前导＃以设置主要用于报告服务器的选项。
+															 </font>
+														 </font><br>
+														 <font style="vertical-align: inherit;">
+															 <font style="vertical-align: inherit;">＃服务器默认值对于事务和快速SELECT更快。
+															 </font>
+														 </font><br>
+														 <font style="vertical-align: inherit;">
+															 <font style="vertical-align: inherit;">＃根据需要调整尺寸，试验以找到最佳值。
+															 </font>
+															 <font style="vertical-align: inherit;">#join_buffer_size </font></font><br>
+														 <font style="vertical-align: inherit;">
+															 <font style="vertical-align: inherit;">= 128M 
+															 </font>
+														 </font><br>
+														 <font style="vertical-align: inherit;">
+															 <font style="vertical-align: inherit;">＃
+															 </font>
+														 </font><br>
+														 <font style="vertical-align: inherit;">
+															 <font style="vertical-align: inherit;">sort_buffer_size 
+															 </font>
+															 <font style="vertical-align: inherit;">= 2M 
+															 </font>
+															 <font style="vertical-align: inherit;">＃read_rnd_buffer_size = 2M 
+															 </font>
+														 </font><br>
+														 <font style="vertical-align: inherit;">
+															 <font style="vertical-align: inherit;">datadir = / var / lib / mysql
+															 </font>
+														 </font><br>
+														 <font style="vertical-align: inherit;">
+															 <font style="vertical-align: inherit;">socket = / var / lib / mysql / mysql.sock 
+															 </font>
+														 </font><br>
+														 <font style="vertical-align: inherit;">
+															 <font style="vertical-align: inherit;">server_id = 1 </font></font><br>
+														 <font style="vertical-align: inherit;">
+															 <font style="vertical-align: inherit;">expire_logs_days = 3
+															 </font>
+														 </font>
+													 </p>
+													 <p>
+														 <font style="vertical-align: inherit;">
+															 <font style="vertical-align: inherit;">＃建议禁用符号链接以防止各种安全风险
+															 </font>
+														 </font><br>
+														 <font style="vertical-align: inherit;">
+															 <font style="vertical-align: inherit;">symbolic-links = 0
+															 </font>
+														 </font>
+													 </p>
+													 <p>
+														 <font style="vertical-align: inherit;">
+															 <font style="vertical-align: inherit;">log-error = / var / log / mysqld.log 
+															 </font>
+														 </font>
+														 <br>
+														 <font style="vertical-align: inherit;">
+															 <font style="vertical-align: inherit;">pid-file = / var / run / mysqld / mysqld.pid</font></font></p>
+												 </h2>
+												 <p>
+													 <font style="vertical-align: inherit;">
+														 <font style="vertical-align: inherit;">不过安装完成后，密码为随机密码，需要重置密码。
+														 </font>
+													 </font>
+												 </p>
+												 <p>
+													 <font style="vertical-align: inherit;">
+														 <font style="vertical-align: inherit;">启动mysql的服务
+														 </font>
+													 </font>
+												 </p>
+												 <p>
+													 <mark>
+														 <font style="vertical-align: inherit;">
+															 <font style="vertical-align: inherit;">service mysqld restart
+															 </font>
+														 </font>
+													 </mark>
+												 </p>
+												 <p>
+													 <font style="vertical-align: inherit;">
+														 <font style="vertical-align: inherit;">重置密码
+														 </font>
+													 </font>
+												 </p>
+												 <p>
+													 <strong>
+														 <font style="vertical-align: inherit;">
+															 <font style="vertical-align: inherit;">[root @ localhost~]&nbsp; </font>
+														 </font>
+													 </strong>
+													 <strong>
+														 <font style="vertical-align: inherit;">
+															 <font style="vertical-align: inherit;">#grep“password”/var/log/mysqld.log&nbsp;
+															 </font>
+														 </font>
+													 </strong>
+												 </p>
+												 <p>
+													 <font style="vertical-align: inherit;">
+														 <font style="vertical-align: inherit;">输入mysql -u root -p密码进入</font>
+													 </font>
+												 </p>
+												 <p>
+													 <font style="vertical-align: inherit;">
+														 <font style="vertical-align: inherit;">第一次登陆，需要重置密码要不什么也不能操作
+														 </font>
+													 </font>
+												 </p>
+												 <p>
+													 <font style="vertical-align: inherit;">
+														 <font style="vertical-align: inherit;">最后记得刷新权限;
+														 </font>
+													 </font>
+												 </p>
+												 <p>
+													 <font style="vertical-align: inherit;">
+														 <font style="vertical-align: inherit;">刷新权限
+														 </font>
+													 </font>
+												 </p>
+												 <p>
+													 <font style="vertical-align: inherit;">
+														 <font style="vertical-align: inherit;">也可以直接再添加新用户
+														 </font>
+													 </font>
+												 </p>
+												 <p>
+													 <font style="vertical-align: inherit;">
+														 <font style="vertical-align: inherit;">创建用户'root'@'％'由'您的密码'识别;
+														 </font>
+													 </font>
+												 </p>
+												 <p>&nbsp;</p>
+											 </div>
+										 </div>
+									 </div>
+								 </div>
+								 <div class="footer-wai">
+								 <footer class="video-foot">
+									 <div class="video-donate">
+										 <a href="" data-ation="live" class="love">
+											 <i class="fa fa-thumbs-o-up"></i>
+											  点赞
+										 </a>
+										 <a href="" class="Share">
+											 <i class="fa fa-share-alt"></i>
+											  分享
+										 </a>
+									 </div>
+									 <div class="footer-tag">
+										 <div class="pull-left">
+											 <i class="fa fa-tags"></i>
+											 <a>No Tag</a>
+										 </div>
+										 <div class="pull-date">
+											 <span>最后编辑：2018年12月06日</span>
+										 </div>
+									 </div>
+								 </footer>
+								 </div>
+							 </article>
+							 <div class="comments-area">
+								 <div class="comment-respond">
+								   <h4 class="comment-reply-title">
+										 发表评论 
+								   </h4>
+								   <form class="comment-form" method="post">
+										 <div class="input-group">
+											 <textarea class="form-control" id="comment" placeholder="|´・ω・)ノ还不快点说点什么呀poi~" name="comment" rows="5" aria-required="true" required="" onkeydown="if(event.ctrlKey){if(event.keyCode==13){document.getElementById('submit').click();return false}};"></textarea>
+										 </div>
+								   </form>
+								   <p class="form-submit">
+									   <input name="submit" type="submit" id="submit" class="btn-primary" value="发表评论">
+								   </p>
+							   </div>
+							 </div>
+					 </div>
+	</div>
+	<foot>
+	 <div id="footer-center-index">
+		<div id="footer">
+			<div class="container-foot">
+				<div class="row-foot">
+					<div class="foot-text-conter">
+						<p class="social-icons">                             </p>
+						<p>
+							@2018
+							<a href="">雨天迷茫的阳光</a>
+							. All Rights Reserved. | 本站已运行
+							<span id="span_dt_dt">40天19小时26分60秒</span>
+							<br>Theme
+							<a href="https://github.com/xb2016/kratos" target="_blank" rel="nofollow">Kratos</a>
+							 made by 
+							<a href="https://www.vtrois.com" target="_blank" rel="nofollow">Vtrois</a>
+							<br>
+							<a href="http://www.miitbeian.gov.cn/" rel="external nofollow" target="_blank">湘ICP备18019743号</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</foot>
+</body>
+</html>

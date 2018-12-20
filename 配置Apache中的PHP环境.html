@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>配置Apache中的PHP环境</title>
+<link rel="stylesheet" type="text/css" href="css/header.css">
+<link rel="stylesheet" type="text/css" href="css/2kvideo.css">
+<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/foot.css">
+<link rel="stylesheet" type="text/css" href="css/Apache-PHP.css">
+</head>
+
+<body>
+	<head>
+		<div>
+          <nav id="headers">
+			  <div id="header-size">
+			  <div id="logo-header"><span><a href="index.html">雨天迷茫的阳光</a></span></div>
+			  <div class="header-fenlei"><a href="index.html">首页</a></div>
+			  <div class="header-fenlei"><a href="Windows.html">Windows</a></div>
+			  <div class="header-fenlei"><a href="Mac OS.html">Mac OS</a></div>
+			  <div class="header-fenlei-wei"><a href="linux.html">linux</a></div>
+			  </div>
+		</nav>
+		</div> 
+		
+	</head>
+	<div class="wrapper" id="mysql-wrapper">
+				 <div class="container" id="mysql-container">
+							 <article>
+								 <div class="main-post" id="post-mysql">
+									 <header class="entry-header">
+										 <h1 class="kratos-entry-title text-center">配置Apache中的PHP环境</h1>
+									 </header>
+									 <div class="post-meta">
+										 <span>
+                                               <i class="fa fa-calendar"></i> 2018年12月6日                                
+											   <i class="fa fa-commenting-o"></i> 0条评论
+                                               <i class="fa fa-eye"></i> 666次阅读  
+                                               <span class="hd">
+                                               <i class="fa fa-thumbs-o-up"></i> 666人点赞
+                                               <i class="fa fa-user"></i> PENG YIFAN                                
+											   </span>
+                                         </span>
+									 </div>
+									 <div class="post-content">
+										 <div class="video">
+											 <div class="kratos-post-content">
+                                                 <p>需要修改Apache的配置文件httpd.conf以得到PHP的解析：</p>
+                                                 <p>1.在LoadModule中添加：LoadModule php5_module &nbsp; &nbsp; modules/libphp5.so<br></p>
+                                                 <p>2.在AddType application/x-gzip .gz .tgz下面添加：<br></p>
+<pre># probably should define those extensions to indicate media types:
+#
+AddType application/x-compress .Z
+AddType application/x-gzip .gz .tgz
+AddType application/x-httpd-php .php
+AddType application/x-httpd-php-source .phps
+</pre>
+                                                 <p>3.在DirectoryIndex增加 index.php，以便Apache识别PHP格式的index</p>
+                                                 <h2 class="title-h2">
+<pre>&lt;IfModule dir_module&gt;  
+DirectoryIndex index.html index.php  
+&lt;/IfModule&gt;</pre>
+                                                 </h2>
+                                                 <p>最后一步验证PHP环境：</p>
+                                                 <p>在Apache网站目录下新建php的phpinfo测试页，/usr/local/apache/htdocs/info.php</p>
+                                                 <div class="cnblogs_code">
+                                                 <h2 class="title-h2"></h2></div>
+                                                 <div>
+<pre>[root@localhost htdocs]# vi info.php
+&lt;?php
+phpinfo();
+?&gt;</pre>
+                                                 </div>
+                                             </div>
+										 </div>
+									 </div>
+								 </div>
+								 <div class="footer-wai">
+								 <footer class="video-foot">
+									 <div class="video-donate">
+										 <a href="" data-ation="live" class="love">
+											 <i class="fa fa-thumbs-o-up"></i>
+											  点赞
+										 </a>
+										 <a href="" class="Share">
+											 <i class="fa fa-share-alt"></i>
+											  分享
+										 </a>
+									 </div>
+									 <div class="footer-tag">
+										 <div class="pull-left">
+											 <i class="fa fa-tags"></i>
+											 <a>No Tag</a>
+										 </div>
+										 <div class="pull-date">
+											 <span>最后编辑：2018年12月06日</span>
+										 </div>
+									 </div>
+								 </footer>
+								 </div>
+							 </article>
+							 <div class="comments-area">
+								 <div class="comment-respond">
+								   <h4 class="comment-reply-title">
+										 发表评论 
+								   </h4>
+								   <form class="comment-form" method="post">
+										 <div class="input-group">
+											 <textarea class="form-control" id="comment" placeholder="|´・ω・)ノ还不快点说点什么呀poi~" name="comment" rows="5" aria-required="true" required="" onkeydown="if(event.ctrlKey){if(event.keyCode==13){document.getElementById('submit').click();return false}};"></textarea>
+										 </div>
+								   </form>
+								   <p class="form-submit">
+									   <input name="submit" type="submit" id="submit" class="btn-primary" value="发表评论">
+								   </p>
+							   </div>
+							 </div>
+					 </div>
+	</div>
+	<foot>
+	 <div id="footer-center-index">
+		<div id="footer">
+			<div class="container-foot">
+				<div class="row-foot">
+					<div class="foot-text-conter">
+						<p class="social-icons">                             </p>
+						<p>
+							@2018
+							<a href="">雨天迷茫的阳光</a>
+							. All Rights Reserved. | 本站已运行
+							<span id="span_dt_dt">40天19小时26分60秒</span>
+							<br>Theme
+							<a href="https://github.com/xb2016/kratos" target="_blank" rel="nofollow">Kratos</a>
+							 made by 
+							<a href="https://www.vtrois.com" target="_blank" rel="nofollow">Vtrois</a>
+							<br>
+							<a href="http://www.miitbeian.gov.cn/" rel="external nofollow" target="_blank">湘ICP备18019743号</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</foot>
+</body>
+</html>
